@@ -1,0 +1,35 @@
+﻿CACHE MANIFEST
+#version 1.0.0
+
+CACHE:
+  manifest
+  index.html
+  styles/vendor.css
+  styles/main.css
+  scripts/modernizr.js
+  scripts/vendor.js
+  scripts/main.js
+  favicon.ico
+  apple-touch-icon.png
+  images/advantage.png
+  images/bubble.png
+  images/itcast.svg
+  images/section_advantage_bg.jpg
+  images/section_fextimes_bg.jpg
+  images/section_home_bg.jpg
+  images/section_home_fg.png
+  images/section_question_bg.jpg
+  images/section_salary_bg.jpg
+  images/section_syllabus_bg.jpg
+  images/section_mobile_bg.jpg
+  images/tile.png
+  images/tile-wide.png
+  fonts/fontawesome-webfont.eot?v=4.4.0
+  fonts/fontawesome-webfont.svg?v=4.4.0
+  fonts/fontawesome-webfont.ttf?v=4.4.0
+  fonts/fontawesome-webfont.woff?v=4.4.0
+  fonts/fontawesome-webfont.woff2?v=4.4.0
+  fonts/FontAwesome.otf?v=4.4.0
+
+NETWORK:
+  *

@@ -1,0 +1,98 @@
+/**
+ * footer component
+ * Author : iceStone <ice@wedn.net>
+ * Created : 2015-08-31 14:42:55
+ * Modified : 2015-08-31 14:43:14
+ * Copyright © 2015 Micua.com. All Rights Reserved.
+ */
+
+footer {
+    background-color: #333;
+    color: #f0f0f0;
+    margin-top: -16.6rem;
+    & > .top {
+        border-top: 0.0625rem solid #e1e4e6;
+        padding: 2rem;
+        .share {
+            margin-top: 2rem;
+            text-align: center;
+            a {
+                display: inline-block;
+                background-color: #fff;
+                font-size: 1.5rem;
+                text-align: center;
+                color: #333;
+                width: 2.5rem;
+                height: 2.5rem;
+                line-height: 2.5rem;
+                border-radius: 1.25rem;
+                margin: 0 0 0 0.5rem;
+                -webkit-transition: transform ease-in-out 0.4s;
+                -o-transition: transform ease-in-out 0.4s;
+                -moz-transition: transform ease-in-out 0.4s;
+                transition: transform ease-in-out 0.4s;
+                // for baidu
+                float: none;
+                padding-left: 0;
+                background-image: none;
+                position: relative;
+                &:hover {
+                    background-color: #ddd;
+                    -webkit-transform: rotate(360deg);
+                    -ms-transform: rotate(360deg);
+                    -o-transform: rotate(360deg);
+                    -moz-transform: rotate(360deg);
+                    transform: rotate(360deg);
+                }
+            }
+        }
+    }
+    & > .bottom {
+        background-color: #2d2d2d;
+        border-top: 0.0625rem solid #404040;
+        line-height: 3rem;
+        p {
+            font-size: 0.8rem;
+            margin-bottom: 0;
+        }
+    }
+    h4 {
+        color: #fff;
+    }
+    .logo {
+        & > svg,
+        & > img {
+            width: 6rem;
+            height: 6rem;
+            margin-right: 15px;
+            -webkit-transition: transform ease-in-out 0.4s;
+            -o-transition: transform ease-in-out 0.4s;
+            -moz-transition: transform ease-in-out 0.4s;
+            transition: transform ease-in-out 0.4s;
+        }
+        & > svg > g > path {
+            fill: #fff;
+        }
+        &:hover {
+            & > svg,
+            & > img {
+                -webkit-transform: rotate(360deg);
+                -ms-transform: rotate(360deg);
+                -o-transform: rotate(360deg);
+                -moz-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+    }
+    .foot-list {
+        padding-left: 1.8rem;
+        margin-top: 1.5rem;
+        & > li {
+            line-height: 1.2;
+            list-style-type: disc;
+            & > a {
+                color: #c0c0c0;
+            }
+        }
+    }
+}

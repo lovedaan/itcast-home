@@ -1,0 +1,106 @@
+/**
+ * header component
+ * Author : iceStone <ice@wedn.net>
+ * Created : 2015-08-31 14:42:55
+ * Modified : 2015-08-31 14:43:14
+ * Copyright Â© 2015 Micua.com. All Rights Reserved.
+ */
+
+$animation-duration:                     0.5s;
+$animation-brand-size:                   2rem;
+$animation-brand-line-height:            2.4;
+$animation-link-size:                    1rem;
+$animation-link-line-height:             2.4;
+$animation-link-padding:                 1.425rem;
+
+.navbar-itcast {
+    opacity: 0.8;
+
+    .navbar-brand {
+        color: #000;
+        text-shadow: 0 0.05rem 0.05rem rgba(0, 0, 0, 0.2);
+        min-width: 6rem;
+
+        &:hover {
+            color: #444;
+        }
+    }
+
+    .navbar-nav {
+        .nav-item {
+            .nav-link {
+                color: #444;
+                text-shadow: 0 0.005rem 0.005rem rgba(0, 0, 0, 0.1);
+
+                &.active {
+                    color: #0079ff;
+                    text-shadow: 0 0.005rem 0.005rem rgba(0, 0, 0, 0.1);
+                }
+            }
+
+            &.active {
+                .nav-link {
+                    color: #0079ff;
+                    text-shadow: 0 0.005rem 0.005rem rgba(0, 0, 0, 0.1);
+                }
+            }
+
+            & + .nav-item > .nav-link:before {
+                color: #888;
+                content: '/';
+                margin-right: 1rem;
+            }
+        }
+    }
+
+    &,
+    .navbar-brand,
+    .navbar-nav .nav-link,
+    .navbar-form,
+    .navbar-toggler {
+        transition: all $animation-duration ease;
+    }
+}
+
+.navbar-form {
+    .form-control {
+        width: 12rem;
+        transition: all $animation-duration ease;
+
+        &:focus {
+            width: 15rem;
+        }
+    }
+}
+
+body[data-scrolled="false"] {
+    .navbar-itcast {
+        opacity: 1;
+
+        .navbar-brand {
+            color: #444;
+            font-size: $animation-brand-size;
+            line-height: $animation-brand-line-height;
+        }
+
+        .navbar-nav {
+            .nav-link {
+                color: #666;
+                font-size: $animation-link-size;
+                line-height: $animation-link-line-height;
+                padding-bottom: $animation-link-padding;
+                padding-top: $animation-link-padding;
+            }
+        }
+
+        .navbar-toggler {
+            margin-top: $animation-link-padding;
+            margin-bottom: $animation-link-padding;
+        }
+
+        .navbar-form {
+            padding-bottom: $animation-link-padding;
+            padding-top: $animation-link-padding;
+        }
+    }
+}

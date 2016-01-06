@@ -1,0 +1,57 @@
+/**
+ * bootstrap extend
+ * Author : iceStone <ice@wedn.net>
+ * Created : 2015-08-31 14:42:55
+ * Modified : 2015-08-31 14:43:14
+ * Copyright © 2015 Micua.com. All Rights Reserved.
+ */
+
+.bg-write {
+    background-color: #fff;
+    color: #333;
+}
+
+.btn-itcast {
+    // color: #c72020;
+    // background: url('../images/bubble.png') left top, url('../images/bubble.png') right bottom, #ffd700;
+    // border: 1px solid #FF0;
+    // text-shadow: 1px 1px 1px white;
+    // font-size: 2rem;
+    // z-index: 999;
+    // position: relative;
+    // padding: 1rem 1.5rem;
+    // -moz-animation: bubble_move 3s linear 0s infinite alternate;
+    // -o-animation: bubble_move 3s linear 0s infinite alternate;
+    // -webkit-animation: bubble_move 3s linear 0s infinite alternate;
+    // animation: bubble_move 3s linear 0s infinite alternate;
+    color: #c72020;
+    background: url("../images/bubble.png") left top, url("../images/bubble.png") right bottom, #ffd700;
+    border: 1px solid #FF0;
+    animation: bubble_move 3s linear 0s infinite alternate;
+    &:active {
+        color: #c72020;
+    }
+    &:hover {
+        color: #c72020;
+        -moz-animation: bubble_move 1s linear 0s infinite alternate;
+        -o-animation: bubble_move 1s linear 0s infinite alternate;
+        -webkit-animation: bubble_move 1s linear 0s infinite alternate;
+        animation: bubble_move 1s linear 0s infinite alternate;
+    }
+    @keyframes bubble_move {
+        from {
+            background: url('../images/bubble.png') left top, url('../images/bubble.png') right bottom, #ffd700;
+        }
+        to {
+            background: url('../images/bubble.png') right bottom, url('../images/bubble.png') left top, #ffd700;
+        }
+    }
+}
+
+// .nav-cover {
+//     font-size: 0;
+//     .nav-item {
+//         display: inline-block;
+//         width: 10%;
+//     }
+// }
